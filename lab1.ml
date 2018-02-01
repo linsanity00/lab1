@@ -169,7 +169,7 @@ to the list containing the elements 3, 4, and 5? You'll want to
 replace the "[]" with the correct functional call.
 ......................................................................*)
 
-let square_all (lst : int list) : int list =
+let rec square_all (lst : int list) : int list =
   match lst with
   | [] -> []
   | h :: t -> [h * h] @ square_all t ;;
