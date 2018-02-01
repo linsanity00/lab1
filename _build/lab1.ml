@@ -99,7 +99,7 @@ appropriate OCaml expression to assign the value to the variable
 exercise1 below.
 ......................................................................*)
 
-let exercise3 () = -(5 - 3) ;;
+let exercise3 () = failwith "exercise3 not implemented" ;;
 
 (* Hint: The OCaml concrete expression
 
@@ -124,23 +124,24 @@ expressions below? Test your solution by uncommenting the examples
 error is generated.
 ......................................................................*)
 
+(*   <--- remove this start of comment line
 
+let exercise5a : ??? = 42 ;;
 
-let exercise5a : int = 42 ;;
-
-let exercise5b : string =
+let exercise5b : ??? =
   let greet y = "Hello " ^ y
   in greet "World!";;
 
-let exercise5c : int * float -> int =
+let exercise5c : ???  =
   fun (x, y) -> x + int_of_float y ;;
 
-let exercise5d : int -> bool =
+let exercise5d : ??? =
   fun x -> x < x + 1 ;;
 
-let exercise5e : bool -> bool list =
+let exercise5e : ??? =
   fun x -> if x then [x] else [] ;;
 
+remove this end of comment line too ----> *)
 
 (*======================================================================
 Part 3: First-order functional programming
@@ -170,11 +171,9 @@ replace the "[]" with the correct functional call.
 ......................................................................*)
 
 let square_all (lst : int list) : int list =
-  match lst with
-  | [] -> []
-  | h :: t -> [h * h] @ square_all t ;;
+  failwith "square_all not implemented" ;;
 
-let exercise6 = square_all[3; 4; 5] ;;
+let exercise6 = [] ;;
 
 (*......................................................................
 Exercise 7: Define a recursive function that sums an integer
