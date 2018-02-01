@@ -174,7 +174,7 @@ let rec square_all (lst : int list) : int list =
   | [] -> []
   | h :: t -> [h * h] @ square_all t ;;
 
-let exercise6 = square_all[3; 4; 5] ;;
+let exercise6 = [3; 4; 5] ;;
 
 (*......................................................................
 Exercise 7: Define a recursive function that sums an integer
